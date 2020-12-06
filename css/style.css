@@ -5,7 +5,7 @@ body{
 }
 
 *, *::before, *::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body{
@@ -17,44 +17,44 @@ a{
   text-decoration: none;
 }
 
-header{
+header {
   padding:  200px 0;
   background: linear-gradient(-135deg,#063ef7,#d2d6e0);
 }
 
-header h1{
-text-align:center;
-font-size: 100px;
-color: #fff;
+header h1 {
+  text-align:center;
+  font-size: 100px;
+  color: #fff;
 }
 
-main{
+main {
   max-width: 1000px;
   margin: 0 auto 50px;
   padding:0 200px;
 }
 
-main section h2{
-font-size: 30px;
-font-weight: 700;
-padding: 15px;
-border-radius: 15px;
-background: #eee;
-margin-top: 50px;
+main section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 15px;
+  background: #eee;
+  margin-top: 50px;
 }
 
-main section img{
-width: 100%;
-margin-top: 20px;
+main section img {
+  width: 100%;
+  margin-top: 20px;
 }
 
-main section p{
-font-size: 18px;
-margin-top: 20px;
-line-height: 2;
+main section p {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 2;
 }
 
-main .message{
+main .message {
   display: flex;
   margin-top: 50px;
   padding: 30px;
@@ -63,8 +63,7 @@ main .message{
 }
 
 main .message .texts {
-width: 45%;
-
+  width: 45%;
 }
 
 main .message .texts p {
@@ -73,46 +72,46 @@ main .message .texts p {
   font-weight: bold;
 }
 
-main .message .texts a{
+main .message .texts a {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 50px auto 0;
-    background: #fd9535;
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
-    width: 250px;
-    height: 43px;
-    border-radius: 10px;
-    box-shadow: 0 2px 2px rgba(0,0,0,.29);
-    border-bottom: solid 3px #984a02;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background: #fd9535;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  width: 250px;
+  height: 43px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0,0,0,.29);
+  border-bottom: solid 3px #984a02;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-main .message .texts a:hover{
-box-shadow: none;
-border: none;
-transform: translateY(3px);
+main .message .texts a:hover {
+  box-shadow: none;
+  border: none;
+  transform: translateY(3px);
 }
 
-main .message > img{
+main .message > img {
   width: 52%;
 }
 
-@media screen and (max-width: 768px){
-header{
-  padding:  80px 0;
-}
-header h1{
-  font-size: 30px;
-  padding:  0 10px;
-  font-weight: bold;
-  line-height: 1.4;
-}
+@media screen and (max-width: 768px) {
+  header {
+    padding:  80px 0;
+  }
+  header h1 {
+    font-size: 30px;
+    padding:  0 10px;
+    font-weight: bold;
+    line-height: 1.4;
+  }
 }
 
-main{
+main {
   padding:  0 5%;
 }
 
@@ -126,12 +125,12 @@ main section  p {
   font-size: 16px;
 }
 
-main .message{
-flex-direction: column-reverse;
-box-shadow:  0 0 5px 3px #ccc;
+main .message {
+  flex-direction: column-reverse;
+  box-shadow:  0 0 5px 3px #ccc;
 }
 
-main .message > img{
+main .message > img {
   width: 100%;
 }
 
@@ -144,9 +143,9 @@ main .message .texts p {
   margin-top: 20px;
 }
 
-main .message .texts a{
-width: 100%;
-font-size: 18px;
-height: 41px;
-margin-top: 15px;
+main .message .texts a {
+  width: 100%;
+  font-size: 18px;
+  height: 41px;
+  margin-top: 15px;
 }
