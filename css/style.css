@@ -1,32 +1,85 @@
 @charset "utf-8";
 
-body{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-body{
+body {
   color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-a{
+a {
   color: #333;
   text-decoration: none;
 }
 
 header {
-  padding:  200px 0;
+  height: 100Vh;
   background: linear-gradient(-135deg,#063ef7,#d2d6e0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-header h1 {
-  text-align:center;
-  font-size: 100px;
+.textAnimation {
   color: #fff;
+  font-size: 100px;
+  letter-spacing: .05em;
 }
+
+.textAnimation:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+/* @keyframes showTextFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showTextFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+@keyframes showTextFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.textAnimation span {
+  display: inline-block;
+}
+
+.textAnimation > span {
+  overflow: hidden;
+}
+
+.textAnimation > span > span {
+  animation: showTextFromBottom 1s backwards;
+}
+
+/* .textAnimation span:nth-of-type(odd) {
+  animation: showTextFromTop ease-out 3s backwards;
+}
+
+.textAnimation span:nth-of-type(even) {
+  animation: showTextFromBottom ease-out 3s backwards;
+} */
 
 main {
   max-width: 1000px;
@@ -103,7 +156,7 @@ main .message > img {
   header {
     padding:  80px 0;
   }
-  header h1 {
+  header .textAnimation {
     font-size: 30px;
     padding:  0 10px;
     font-weight: bold;
