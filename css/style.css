@@ -33,25 +33,6 @@ header {
   margin-top: 20px;
 }
 
-/* @keyframes showTextFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes showTextFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-60px);
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-
 @keyframes showTextFromBottom {
   0% {
     transform: translateY(100%);
@@ -72,14 +53,6 @@ header {
 .textAnimation > span > span {
   animation: showTextFromBottom 1s backwards;
 }
-
-/* .textAnimation span:nth-of-type(odd) {
-  animation: showTextFromTop ease-out 3s backwards;
-}
-
-.textAnimation span:nth-of-type(even) {
-  animation: showTextFromBottom ease-out 3s backwards;
-} */
 
 main {
   max-width: 1000px;
