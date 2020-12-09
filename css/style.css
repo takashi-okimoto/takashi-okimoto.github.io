@@ -49,6 +49,7 @@ nav h1 {
 #nav ul li {
   margin-left: 35px;
   font-weight: bold;
+  font-size: 20px;
 }
 
 #nav ul li a {
@@ -175,17 +176,24 @@ main .message > img {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    padding:  80px 0;
-  }
   header .textAnimation {
-    font-size: 30px;
-    padding:  0 10px;
+    font-size: 40px;
+    padding: 0 10px;
     font-weight: bold;
     line-height: 1.4;
   }
+  nav {
+    font-size: 15px;
+    padding: 15px;
+  }
+  nav h1 {
+    font-size: 20px;
+  }
+  #nav ul li {
+    margin-left: 12px;
+    font-size: 15px;
+  }
 }
-
   main {
     padding:  0 5%;
   }
